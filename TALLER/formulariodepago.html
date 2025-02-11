@@ -1,0 +1,77 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Formulario de Datos</title>  
+</head>  
+<body>  
+
+    <form>  
+        <fieldset>  
+            <legend>MIS DATOS:</legend>  
+            <ol>  
+                <li>  
+                    <label for="nombre">Nombre:</label>  
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba aquí su nombre">  
+                </li>  
+                <li>  
+                    <label for="correo">Correo electrónico:</label>  
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@dominio.com">  
+                </li>  
+                <li>  
+                    <label for="telefono">Teléfono:</label>  
+                    <input type="tel" id="telefono" name="telefono" placeholder="ej. +34984530203">  
+                </li>  
+            </ol>  
+        </fieldset>  
+
+        <fieldset>  
+            <legend>Dirección</legend>  
+            <ol>  
+                <li>  
+                    <label for="direccion">Dirección:</label>  
+                    <textarea id="direccion" name="direccion" rows="4" cols="50"></textarea>  
+                </li>  
+                <li>  
+                    <label for="codigo_postal">Código Postal:</label>  
+                    <input type="text" id="codigo_postal" name="codigo_postal" placeholder="CP">  
+                </li>  
+                <li>  
+                    <label for="ciudad">Ciudad:</label>  
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">  
+                </li>  
+            </ol>  
+        </fieldset>  
+
+        <fieldset>  
+            <legend>Forma de pago</legend>  
+            <ol>  
+                <li>  
+                    Tarjetas de Crédito:  
+                    <ul>  
+                        <li><input type="radio" id="visa" name="tarjeta" value="visa"> <label for="visa">VISA</label></li>  
+                        <li><input type="radio" id="amex" name="tarjeta" value="amex"> <label for="amex">American Express</label></li>  
+                        <li><input type="radio" id="mastercard" name="tarjeta" value="mastercard"> <label for="mastercard">Master Card</label></li>  
+                    </ul>  
+                </li>  
+                <li>  
+                    <label for="numero_tarjeta">Número Tarjeta:</label>  
+                    <input type="text" id="numero_tarjeta" name="numero_tarjeta" placeholder="Número tarjeta">  
+                </li>  
+                <li>  
+                    <label for="codigo_seguridad">Código Seguridad:</label>  
+                    <input type="text" id="codigo_seguridad" name="codigo_seguridad" placeholder="Código seguridad">  
+                </li>  
+                <li>  
+                    <label for="nombre_tarjeta">Nombre Tarjeta:</label>  
+                    <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" placeholder="Nombre exacto tarjeta">  
+                </li>  
+            </ol>  
+        </fieldset>  
+
+        <button type="submit">Comprar</button>  
+    </form>  
+
+</body>  
+</html>
